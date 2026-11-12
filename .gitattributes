@@ -1,0 +1,7 @@
+# Keep source language detection explicit without hiding HTML or CSS.
+*.ts linguist-language=TypeScript linguist-detectable=true
+*.tsx linguist-language=TypeScript linguist-detectable=true
+
+# Exclude build output and dependencies if they are ever tracked.
+dist/** linguist-generated=true
+node_modules/** linguist-vendored=true
